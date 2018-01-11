@@ -17,11 +17,11 @@ mounted(){
       }
 ```
 
->这里的**`this.$route.query`**当然是Boolean值。。如果你这么以为。。那么恭喜你入坑了，但是当你刷新页面的时候 你会发现事实并非如此，代码并没与进入到`if`中去..
+>这里的**`this.$route.query.b`**当然是Boolean值。。如果你这么以为。。那么恭喜你入坑了，但是当你刷新页面的时候 你会发现事实并非如此，代码并没与进入到`if`中去..
 ##### 如果你的操作是要在某个参数为true的情况下才继续往下执行。。那么你可以这么写。。
 ```
 mounted(){
-        if((typeof this.$route.query.a!='string' &&this.$route.query.a) || (this.$route.query.a &&this.$route.query.a=='true' )){
+        if((typeof this.$route.query.b!='string' &&this.$route.query.b) || (this.$route.query.b &&this.$route.query.b=='true' )){
           ...
         }
       }
