@@ -11,7 +11,7 @@ tags:
 ##### 在vue-router中 获取路由中的query做判断你也许会这么写。。
 ```
 mounted(){
-        if(this.$route.query){
+        if(this.$route.query.b){
           ...
         }
       }
@@ -21,7 +21,7 @@ mounted(){
 ##### 如果你的操作是要在某个参数为true的情况下才继续往下执行。。那么你可以这么写。。
 ```
 mounted(){
-        if(this.$route.query || this.$route.query=='true'){
+        if((typeof this.$route.query.a!='string' &&this.$route.query.a) || (this.$route.query.a &&this.$route.query.a=='true' )){{
           ...
         }
       }
@@ -29,3 +29,6 @@ mounted(){
 
 ##### 算是一个小坑吧。。暂时没有去找过其他的解决办法。。有其他解决办法的加群一起讨论呗~群号：163958730
 ![image.jpeg](http://upload-images.jianshu.io/upload_images/5597175-8a1fa71f2569312f.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 之前有个笔误。。。
+`this.$route.query是一个object 需要取到里面的属性判断。。必须是query.xx。如果没有传参，则query是个空对象`
