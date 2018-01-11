@@ -21,7 +21,7 @@ mounted(){
 ##### 如果你的操作是要在某个参数为true的情况下才继续往下执行。。那么你可以这么写。。
 ```
 mounted(){
-        if((typeof this.$route.query.a!='string' &&this.$route.query.a) || (this.$route.query.a &&this.$route.query.a=='true' )){{
+        if((typeof this.$route.query.a!='string' &&this.$route.query.a) || (this.$route.query.a &&this.$route.query.a=='true' )){
           ...
         }
       }
