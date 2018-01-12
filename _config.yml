@@ -5,9 +5,10 @@
 # Site
 title: Shadownc
 subtitle:
-description:
+description: Shadownc
 author: shadow
-language: zh-CN
+#language: zh-CN
+language: zh-Hans
 timezone:
 
 # URL
@@ -72,7 +73,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: shana
+#theme: shana
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
