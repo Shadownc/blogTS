@@ -14,7 +14,7 @@
   <div class="post-block archive">
     <div id="posts" class="posts-collapse">
       <span class="archive-move-on"></span>
-
+	  {##########
       <span class="archive-page-counter">
         {% set cheers %}
         {% set posts_length = site.posts.length %}
@@ -28,7 +28,7 @@
         {% endif %}
         {{ __('cheers.' + cheers) }}! {{ _p("counter.archive_posts", site.posts.length) }} {{ __('keep_on') }}
       </span>
-
+		###########}
       {% for post in page.posts %}
 
         {# Show year #}
