@@ -1,5 +1,5 @@
 ---
-title: '''Vue循序渐进'''
+title: 'Vue循序渐进'
 date: 2018-01-08 15:22:23
 categories:
 - Vue
