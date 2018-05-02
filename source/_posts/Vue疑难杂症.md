@@ -59,7 +59,7 @@ methods: {
 父组件：
 <template>
   <div>
-      <child @getChange="change" :msg="msg"></child> //监听子组件触发的upup事件,然后调用change方法
+      <child @getChange="change" :msg="msg"></child> //监听子组件触发的getChange事件,然后调用change方法
   </div>
 </template>
 methods: {
