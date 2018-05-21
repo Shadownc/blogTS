@@ -136,3 +136,9 @@ beforeRouteEnter (to, from, next) {
 ```JavaScript
 const HelloWorld = r => require.ensure([], () => r(require('@/components/HelloWorld')), 'Home');
 ```
+5.判断条件满足以后才往下执行点击事件(略微有个小坑吧)
+```JavaScript
+@click="isTrue&&chooseCompany"//这样写在click方法里打debugger并不会进去
+
+@click="isTrue&&chooseCompany()"//所以这才是解锁得正确方式~~~
+```
