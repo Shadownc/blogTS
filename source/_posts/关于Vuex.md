@@ -2,9 +2,9 @@
 title: something about Vuex...
 date: 2018-01-17 16:41:37
 categories:
-- Vuex
+- Vue
 tags:
-- Vuex
+- Vue
 ---
 安装什么得应该不用多说了吧。。不会安装的点击官网链接
 
