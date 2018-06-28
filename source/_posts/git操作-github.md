@@ -2,9 +2,9 @@
 title: git操作--github
 date: 2018-01-11 11:29:05
 categories:
-- github
+- git
 tags:
-- github
+- git
 ---
 ##### github设置项目默认语言类型展示
 ```javascript
