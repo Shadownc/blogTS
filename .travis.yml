@@ -13,7 +13,7 @@ install:
 
 #清除 生成
 script:
-  - hexo clean  
+  #- hexo clean  
   - hexo g
 
 after_script:
