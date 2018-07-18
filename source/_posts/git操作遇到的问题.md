@@ -11,3 +11,8 @@ tags:
 `恢复设置:git config core.ignorecase true`
 ##### 创建.gitignore文件--git bash执行
 `touch .gitignore`
+##### git pull 报错--refusing to merge unrelated histories
+```
+git pull --allow-unrelated-histories
+//输入完后，会进入vim，这时你就只需输入你这次commit的补充信息 然后esc退出输入或者:q退出即可
+```
