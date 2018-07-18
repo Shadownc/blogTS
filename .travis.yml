@@ -1,0 +1,38 @@
+language: node_js
+node_js: stable
+
+# 指定缓存模块，可选。缓存可加快编译速度。
+cache:
+  directories:
+    - node_modules
+
+    
+#安装hexo及插件
+install:
+  - npm install  
+
+#清除 生成
+script:
+  - hexo clean  
+  - hexo g
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "Shadownc"
+  - git config user.email "365172043@qq.com"
+  - git add .
+  - git commit -m "update"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+  #- git push --force --quiet "https://${GH_TOKEN}@github.com/Shadownc/Shadownc.github.io.git" master:master
+
+
+#默认一个分支可以忽略此配置--监视github仓库中的master分支，分支出现变化就执行build
+#branches:
+#  only:
+#    - master
+
+#build以后的地址
+env:
+ global:
+   - GH_REF: github.com/Shadownc/Shadownc.github.io.git
