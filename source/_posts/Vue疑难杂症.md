@@ -142,3 +142,27 @@ const HelloWorld = r => require.ensure([], () => r(require('@/components/HelloWo
 
 @click="isTrue&&chooseCompany()"//所以这才是解锁得正确方式~~~
 ```
+6.vue定义了别名(alias)，引用图片路径错误问题
+```JavaScript
+vue-html-loader and css-loader translates non-root URLs to relative paths. In order to treat it like a module path, prefix it with ~
+//就是要在别名前面加一个~
+alias: {
+  'src': path.resolve(__dirname, '../src'),
+  'assets': path.resolve(__dirname, '../src/assets'),
+  'components': path.resolve(__dirname, '../src/components')
+}
+
+<template>
+    <img src="~assets/images/logo.jpg" />//引用
+</template>
+<script>
+import 'assets/css/style.css'
+</script>
+<style>
+.logo {
+    background: url(~asset/images/bg.jpg)
+}
+</style>
+//意思就是: 告诉加载器它是一个模块，而不是相对路径
+//注意: 只有在template中的静态文件地址和style中的静态文件地址需要加~, 在script里的, 别名定义成什么就写什么.
+```
