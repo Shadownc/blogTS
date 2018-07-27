@@ -88,6 +88,31 @@ root     124048  0.0  0.1  14684  1036 pts/0    S+   17:04   0:00 grep --color=a
 
 //修改了配置文件以后重启nginx
 /usr/local/nginx/sbin/nginx -s reload --或者进入到nginx安装目录sbin下执行 ./nginx -s reload
+//贴一小段配置代码：
+server {
+        listen       8090;
+        server_name  www.shadow.com; #服务器域名
+
+        #charset koi8-r;
+
+        #access_log  logs/host.access.log  main;
+
+        location / {
+           # root   html;
+           # index  index.html index.htm;
+           proxy_pass http://127.0.0.1:3000;
+           proxy_redirect default;
+        }
+
+        #error_page  404              /404.html;
+
+        # redirect server error pages to the static page /50x.html
+        #
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+}
 ```
 ##### 安装MongoDB
 ```JavaScript
