@@ -5,6 +5,7 @@ categories:
 - Vue
 tags:
 - Vue
+---
 #####nginx 配置
 ```JavaScript
 //修改nginx.conf配置文件,在http下面添加一行代码:include vhost/*.conf; 表示每个项目单独配置,方便管理.
