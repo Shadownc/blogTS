@@ -9,7 +9,7 @@ tags:
 ##### linux安装docker
 `curl https://releases.rancher.com/install-docker/17.12.sh | sh`
 ##### DockerFile
-```
+```JavaScript
 # 基础镜像为node，版本为v8.9.3
 FROM node:8.9.3
 # 镜像作者，可以附加联系信息
@@ -30,7 +30,7 @@ EXPOSE 3000
 ENTRYPOINT ["node","index.js"]
 ```
 ##### nodejs MongoDB连接问题
-```
+```JavaScript
 //首选，从docker hub仓库拉取一个镜像
 docker pull mongo
 //启动容器
@@ -49,6 +49,6 @@ $PWD：当前文件目录，例如我们以root进入，$PWD就表示root的目�
 -e 设置环境变量，与在dockerfile env设置相同效果
 ```
 ##### docker命令
-```
+```JavaScript
 docker ps --查看新启动的容器是否正常启动
 ```
