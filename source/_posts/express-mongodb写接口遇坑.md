@@ -24,10 +24,16 @@ db.news.find( {}, { id: 1, title: 1 } )
 db.news.find( {查询条件}, {content: 0 } )
 ```
 ##### express-session 本地接口没问题，部署以后post请求会出现参数不匹配--502
-```
+```JavaScript
 #查看nginx error.log报错信息:
 upstream prematurely closed connection while reading response header from upstream, client: xx.xxx.xxx.xx, server: shadow.com, request: "POST /user/login HTTP/1.1",
 #排查了很久发现是退出登录以后再次请求没有清除session
 #退出登录方法中调用:
 req.session.destroy();
+```
+##### express process.env.NODE_ENV判断不起作用
+```JavaScript
+#在启动的时候设置NODE_ENV
+set NODE_ENV=development&& node index.js
+需要注意的是:development后面不能跟空格，否则你去判断的时候会出现不起作用的情况
 ```
