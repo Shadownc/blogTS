@@ -52,5 +52,8 @@ $PWD：当前文件目录，例如我们以root进入，$PWD就表示root的目�
 ```
 ##### docker命令
 ```JavaScript
-docker ps --查看新启动的容器是否正常启动
+docker ps --查看新启动的容器是否正常启动。
+docker ps -a --显示所有的容器，包括未运行的。
+docker rm [NAMES] --删除容器。
+docker start/restart [NAMES] --启动或重新启动已存在的容器。
 ```
