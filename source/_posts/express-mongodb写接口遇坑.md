@@ -37,3 +37,12 @@ req.session.destroy();
 set NODE_ENV=development&& node index.js
 需要注意的是:development后面不能跟空格，否则你去判断的时候会出现不起作用的情况
 ```
+##### multer文件上传
+```JavaScript
+postman测试的时候key的值要跟upload.single('file') single中的一样
+//服务器访问图片404--添加图片代理:
+location /images {
+    proxy_pass http://localhost:3000;
+  }
+#注意：放在location / {} 前面 配置完重启nginx
+```

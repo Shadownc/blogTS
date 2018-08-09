@@ -21,6 +21,11 @@ server {
   index index.html;
 
   server_name www.shadow.com;
+  
+  #图片代理
+  location /images {
+    proxy_pass http://127.0.0.1:3000;
+  }
 
   location / {
     try_files $uri $uri/ /index.html;
