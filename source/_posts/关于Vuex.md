@@ -6,6 +6,8 @@ categories:
 tags:
 - Vue
 ---
+Vuex从入门到放弃...哈哈哈
+<!-- more -->
 安装什么得应该不用多说了吧。。不会安装的点击官网链接
 
 **Vuex:**<https://vuex.vuejs.org/zh-cn/installation.html>

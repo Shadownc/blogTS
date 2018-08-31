@@ -6,6 +6,8 @@ categories:
 tags:
 - Vue
 ---
+vue-cli创建项目报错原因及解决
+<!-- more -->
 ### 如题。。
 今天准备新建个`vue-cli`的项目测试用，但是当你`cmd`执行命令的时候却一直报错。。
 `cmd`命令：

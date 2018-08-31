@@ -6,6 +6,8 @@ categories:
 tags:
 - node
 ---
+nodejs搭建自己的cli--目前搭建的下载好像遇到了问题，暂时还没有时间去处理解决
+<!-- more -->
 ##### 第三方库
 *   [commander.js](https://link.juejin.im/?target=https%3A%2F%2Flink.zhihu.com%2F%3Ftarget%3Dhttps%253A%2F%2Fgithub.com%2Ftj%2Fcommander.js)，可以自动的解析命令和参数，用于处理用户输入的命令。
 *   [download-git-repo](https://link.juejin.im/?target=https%3A%2F%2Flink.zhihu.com%2F%3Ftarget%3Dhttps%253A%2F%2Fgithub.com%2Fflipxfx%2Fdownload-git-repo)，下载并提取 git 仓库，用于下载项目模板。

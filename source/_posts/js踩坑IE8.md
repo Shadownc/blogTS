@@ -6,6 +6,8 @@ categories:
 tags:
 - JavaScript
 ---
+JavaScript在ie8的兼容处理(如forEach、indexOf..)
+<!-- more -->
 ##### 记一次项目中遇到得坑吧。。
 1.IE8不兼容forEach--作为一个遍历神器 不能用怎么行  0.0
 ```JavaScript

@@ -6,6 +6,8 @@ categories:
 tags:
 - Vue
 ---
+Travis自动部署vue打包后的文件到远程服务器
+<!-- more -->
 ##### 生成密钥对
 `ssh-keygen`
 输入上面的指令以后一路回车即可，你会发现在用户根目录下多了.ssh目录，进去看一下`cd ~/.ssh`，里面有3个文件

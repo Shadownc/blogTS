@@ -6,6 +6,8 @@ categories:
 tags:
 - Vue
 ---
+Vue-Router获取参数判断的问题
+<!-- more -->
 #### 先来一个项目中会遇到的问题吧
 `let url='http://www.xx.com?a=1&b=true'`
 ##### 在vue-router中 获取路由中的query做判断你也许会这么写。。

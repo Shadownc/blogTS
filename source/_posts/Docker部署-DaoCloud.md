@@ -6,6 +6,8 @@ categories:
 tags:
 - node
 ---
+Docker基于DaoCloud持续集成自动化部署nodejs后端api教程
+<!-- more -->
 ##### linux安装docker
 `curl https://releases.rancher.com/install-docker/17.12.sh | sh`
 ##### DockerFile

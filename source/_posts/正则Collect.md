@@ -6,6 +6,8 @@ categories:
 tags:
 - JavaScript
 ---
+记录一些常用的正则表达式
+<!-- more -->
 ```JavaScript
 let reg;
 //数字最多两位小数

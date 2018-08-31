@@ -6,6 +6,8 @@ categories:
 tags:
 - node
 ---
+nodejs批量修改文件名源代码及使用方法
+<!-- more -->
 ##### 先上代码：
 ```JavaScript
 let fs = require('fs'),

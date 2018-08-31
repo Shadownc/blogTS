@@ -6,6 +6,8 @@ categories:
 tags:
 - Vue
 ---
+vue的过渡动画css
+<!-- more -->
 ##### 关于vue的过渡动画,先上css:
 ```css
 /* // down */

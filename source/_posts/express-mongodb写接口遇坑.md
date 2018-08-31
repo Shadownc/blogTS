@@ -6,6 +6,8 @@ categories:
 tags:
 - node
 ---
+express+mongodb写api接口遇到的一些问题及解决方法
+<!-- more -->
 ##### node crypto密码加密
 ```JavaScript
 #express加密密码时报错 Digest already called

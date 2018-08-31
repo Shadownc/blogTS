@@ -6,6 +6,8 @@ categories:
 tags:
 - ES6
 ---
+ES6 export和export Default区别
+<!-- more -->
 >export命令用于规定模块的对外接口，import命令用于输入其他模块提供的功能。
 ```JavaScript
 //export :基本用法是放置在一个"声明"之前，或一组由{}语法（注意，此处的{}语法与对象无关）

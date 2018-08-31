@@ -6,6 +6,8 @@ categories:
 tags:
 - git
 ---
+travis-ci自动部署hexo到github教程
+<!-- more -->
 ##### .travis.yml--贴一下配置文件
 ```JavaScript
 language: node_js

@@ -6,6 +6,8 @@ categories:
 tags:
 - Vue
 ---
+Vue点击空白处隐藏--适用于pc菜单展开的隐藏
+<!-- more -->
 ##### 方法有两种
 1.div失去焦点事件：
 ```JavaScript

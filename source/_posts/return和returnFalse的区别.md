@@ -6,6 +6,8 @@ categories:
 tags:
 - JavaScript
 ---
+JavaScript return和return false的区别
+<!-- more -->
 ##### return和return false的区别
 一、返回控制与函数结果，
 

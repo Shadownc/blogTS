@@ -6,6 +6,8 @@ categories:
 tags:
 - node
 ---
+linux服务器配置(node环境)
+<!-- more -->
 ##### 新建node安装目录，与node项目目录
 ```JavaScript
 sudo mkdir -p /www/dev/node //目录位置可选
