@@ -43,4 +43,7 @@ reg=/^(\d{3})\d+(\d{3})$/
 reg=/^\s+|\s+$/g
 // /^\s+|\s+$/g.test('123')--false  /^\s+|\s+$/g.test('  123')--true /^\s+|\s+$/g.test('1  23')--false
 // /^\s+|\s+$/g.test('   1  23  ')--true  /^\s+|\s+$/g.test('123  ')--true
+//去除HTML Tag,但不去除换行标签<br>
+reg=/<(?!\/?br\/?.+?>)[^<>]*>/g
+// str.replace(/<(?!\/?br\/?.+?>)[^<>]*>/g, '');
 ```
