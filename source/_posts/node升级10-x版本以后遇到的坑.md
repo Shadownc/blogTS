@@ -9,7 +9,7 @@ tags:
 node升级10.x版本以后遇到的坑
 <!-- more -->
 ##### 报错信息
-![gulp-error.png](/images/gulp-error.jpg '错误截图')
+![gulp-error.png](/images/gulp-error.png '错误截图')
 ##### 解决方案
 ```JavaScript
 #在项目根目录下执行
