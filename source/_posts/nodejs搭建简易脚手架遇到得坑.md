@@ -54,4 +54,4 @@ download('github:Shadownc/express-tpl#master', name, {clone: true}, (err) => {
 Shadownc/express-tpl#master
 //#master为模板所在的分支
 ```
-欢迎加群讨论：163958730 --脚手架暂时不能用啦0.0 等待更新
+欢迎加群讨论：163958730 --脚手架暂时不能用啦0.0 等待更新。
