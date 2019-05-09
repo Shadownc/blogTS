@@ -8,9 +8,9 @@ tags:
 ---
 删除webpack打包导致无法删除的文件
 <!-- more -->
-#####展示下删除提示:
+##### 展示下删除提示:
 ![](/images/can'tDel.png '错误截图')
-#####解决方法：
+##### 解决方法：
 ```JavaScript
 cmd 打开命令提示符
 输入： rd /q/s E:\webpack.\
