@@ -5,6 +5,7 @@ categories:
 - JavaScript
 tags:
 - JavaScript
+---
 js定时器执行一次和重复执行
 <!-- more -->
 ##### js 定时器 执行一次和重复执行
