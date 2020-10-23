@@ -6,6 +6,8 @@ categories:
 tags:
 - git
 ---
+git添加ssh
+<!-- more -->
 ##### github设置项目默认语言类型展示
 ```javascript
 *.js linguist-language=JavaScript
