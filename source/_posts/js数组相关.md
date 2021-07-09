@@ -13,7 +13,7 @@ js数组相关
 作用：向数组的末尾添加一个或更多元素  
 参数：(item1, item2, ...)  
 返回值: push完成后数组的新长度
-``` js
+``` Javascript
 let arr = []
 arr.push(1)
 arr.push(2,3,4)
