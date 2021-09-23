@@ -76,6 +76,27 @@ pagination_dir: page
 #theme: shana
 theme: next
 
+# live2d
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-z16
+    # live2d-widget-model-wanko
+    # live2d-widget-model-z16
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
+
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
