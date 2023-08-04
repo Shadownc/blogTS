@@ -22,21 +22,21 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-npm-cache
       - name: Install dependencies & Generate static files
-      run: |
-        node -v
-        npm i -g hexo-cli
-        npm i
-        hexo clean
-        hexo g
-    - name: Deploy to Github Pages
-      env:
-        GIT_NAME: Shadownc
-        GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
-        REPO: github.com/Shadownc/Shadownc.github.io
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      run: |
-        cd ./public && git init && git add .
-        git config --global user.name $GIT_NAME
-        git config --global user.email $GIT_EMAIL
-        git commit -m "update"
-        git push --force --quiet "https://$GH_TOKEN@$REPO" master:master
+        run: |
+          node -v
+          npm i -g hexo-cli
+          npm i
+          hexo clean
+          hexo g
+      - name: Deploy to Github Pages
+        env:
+          GIT_NAME: Shadownc
+          GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
+          REPO: github.com/Shadownc/Shadownc.github.io
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          cd ./public && git init && git add .
+          git config --global user.name $GIT_NAME
+          git config --global user.email $GIT_EMAIL
+          git commit -m "update"
+          git push --force --quiet "https://$GH_TOKEN@$REPO" master:master
