@@ -20,7 +20,7 @@ link = {
             li += '<div class="card">' +
                 '<img class="ava" src="' + avatar + '" />' +
                 '<div class="card-header"><div>' +
-                ' <a href="' + site + '">' + nickname + '</a></div>' +
+                ' <a href="' + site + '" target="_blank">' + nickname + '</a></div>' +
                 '<div class="info">'+description+'</div></div></div>'
         }
         $('.link-navigation').append(li)
