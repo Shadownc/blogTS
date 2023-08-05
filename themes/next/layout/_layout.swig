@@ -90,5 +90,12 @@
   {% include '_third-party/mathjax.swig' %}
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
+
+  {# 友链设置 #}
+  {% if page.type === 'links' %}
+    <script type="text/javascript" src="{{ url_for(theme.js) }}/src/link.js?v={{ theme.version }}"></script>
+  {% else %}
+  {% endif %}
+
 </body>
 </html>
