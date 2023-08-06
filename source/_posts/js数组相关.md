@@ -349,3 +349,68 @@ const moveFirst=(v,arr)=>{
 console.log(moveFirst('小哥哥',arr1)); //[ { name: '小哥哥' }, { name: '大幂幂' } ] 
 console.log(moveFirst(2,arr)); //[ 2, 1, 3, 4 ]
 ```
+## js将数组指定元素移动到指定位置
+``` js
+let arr = [
+    { name: '婺城区' },
+    { name: '开发区' },
+    { name: '东阳市' }
+]
+
+const moveItem = (index = 0, arr) => {
+    //默认移动到第一位 条件可自行修改
+    let item = arr.splice(arr.findIndex(i => i.name == '开发区'), 1)
+    console.log(item);
+    arr.splice(index, 0, item)
+    return arr
+}
+
+console.log(moveItem(null, arr)); // [ { name: '开发区' } ], { name: '婺城区' }, { name: '东阳市' } ]
+```
+## js根据相同属性值将一个一维对象数组转为二维数组
+``` js
+// 待转换的一维数组
+var arrayFirst = [{
+    code: 1,
+    datas: 'a网吧'
+},
+{
+    code: 1,
+    datas: 'b网吧'
+}, {
+    code: 2,
+    datas: 'a酒店'
+},
+{
+    code: 2,
+    datas: 'b酒店'
+},
+{
+    code: 3,
+    datas: 'a学校'
+}, {
+    code: 3,
+    datas: 'b学校'
+},
+{
+    code: 3,
+    datas: 'c学校'
+}
+]
+```
+按照相同的code值转换成二维数组
+``` js
+[
+[{code: 1, datas: "a网吧"},{code: 1, datas: "b网吧"}],
+[{code: 2, datas: "a酒店"},{code: 2, datas: "b酒店"}], 
+[{code: 3, datas: "a学校"},{code: 3, datas: "b学校"},{code: 3, datas: "c学校"}]
+]
+```
+``` js
+// 转换后的二维数组
+var arrayTwo = Object.values(arrayFirst.reduce((res, item) => {
+  res[item.code] ? res[item.code].push(item) : res[item.code] = [item];
+  return res;
+}, {}));
+console.log(arrayTwo)
+```
