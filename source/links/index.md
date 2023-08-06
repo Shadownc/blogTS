@@ -82,7 +82,21 @@ type: links
         </div>
     </div>
 </div>
-
+<script src="https://giscus.app/client.js"
+        data-repo="Shadownc/getComment"
+        data-repo-id="R_kgDOKDNmJA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOKDNmJM4CYVsf"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
 -----
 -----
 
@@ -94,5 +108,5 @@ type: links
 - 网站地址：[https://shadownc.github.io/](https://shadownc.github.io/)
 - 网站描述：description
 - 网站 Logo/头像：[https://shadownc.github.io/assets/images/logo.jpg](https://shadownc.github.io/assets/images/logo.jpg)
-- 老站留言未开通,可去[新站](https://blog.lmyself.top/)留言新增友链
+<!-- - 老站留言未开通,可去[新站](https://blog.lmyself.top/)留言新增友链 -->
 {% endnote %}

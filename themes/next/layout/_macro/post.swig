@@ -333,9 +333,23 @@
     {#####################}
     {### END POST BODY ###}
     {#####################}
-
     {% if theme.wechat_subscriber.enabled and not is_index %}
       <div>
+        <script src="https://giscus.app/client.js"
+                data-repo="Shadownc/getComment"
+                data-repo-id="R_kgDOKDNmJA"
+                data-category="Announcements"
+                data-category-id="DIC_kwDOKDNmJM4CYVsf"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="bottom"
+                data-theme="preferred_color_scheme"
+                data-lang="zh-CN"
+                crossorigin="anonymous"
+                async>
+        </script>
         {% include 'wechat-subscriber.swig' %}
       </div>
     {% endif %}
